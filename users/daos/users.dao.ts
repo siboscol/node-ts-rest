@@ -42,7 +42,7 @@ class UsersDao {
       'lastName',
       'permissionLevel'
     ]
-    for (let field in allowedPatchFields) {
+    for (let field of allowedPatchFields) {
       if (field in user) {
         // @ts-ignore
         currentUser[field] = user[field]
